@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --header-color: rgb(0, 0, 0);
+    --shadow-color: rgb(61, 61, 61);
+    --bg-color: grey;
+    --color-title: rgb(0, 255, 0);
+    --color-point: blue;
+    --font-title: "Press Start 2P", system-ui;
+    --height-header: 4rem;
+}
+
+header {
+    height: var(--height-header);
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.5rem .5rem 5rem var(--shadow-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.span-header{
+    color: var(--color-point);
+}
+
+.nav-header {
+    
+}
+
+.ul-nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.a-header {
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 0.7rem;
+    color: var(--color-title);
+}
+
+.logo-header{
+    color: var(--color-title);
+    font-family: var(--font-title);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.section-hero{
+    background-color: var(--shadow-color);
+    height: calc(100vh - var(--height-header));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div-hero{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h1-hero{
+    font-family: var(--font-title);
+    margin-bottom: 2rem;
+    color: var(--color-title);
+}
+
+.p-hero{
+    text-align: justify;
+    color: var(--color-title);
+}
+
+.img-hero{
+    align-self: center;
+    justify-self: center;
+    height: 15rem;
+    width: auto;
+}
+
+.button-burger{
+    display: none;
+}
+
+@media (max-width: 64rem) {
+    .button-burger{
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        background-color: var(--header-color);
+        border: none;
+    }
+
+    .span-burger{
+        display: block;
+        height: 0.15rem;
+        width: 2rem;
+        background-color: var(--color-title);
+    }
+
+    .nav-header{
+        display: none;
+    }
+}
+
+/* @media (max-width: 48rem) {
+    .button-burger{
+        display: block;
+    }
+} */
