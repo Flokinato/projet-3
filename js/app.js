@@ -9,7 +9,7 @@ button.addEventListener("click", function(){
         if (attribut === "false"){
             button.setAttribute("aria-expanded", "true");
             menu.classList.add("open");}
-        if (attribut === "true"){
+        else {
             button.setAttribute("aria-expanded", "false");
             menu.classList.remove("open")}
         console.log(attribut)
